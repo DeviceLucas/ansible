@@ -1,0 +1,22 @@
+---
+# Variables here are applicable to all host groups
+
+httpd_port: 80
+ntpserver: 192.168.1.2
+
+# AWS specific variables
+ec2_access_key: AKIAVLKJGCEWHBKPG65R
+ec2_secret_key: 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
+ec2_region: us-east-2
+ec2_zone: us-east-2b
+ec2_image: ami-047f8d5264202dcac
+ec2_instance_type: t2.micro
+ec2_keypair: ohio-key
+ec2_security_group: default
+ec2_instance_count: 3
+ec2_tag: demo
+ec2_tag_name_prefix: dj
+ec2_hosts: all
+wait_for_port: 22
+# This user name will be set by Tower, when run through Tower
+tower_user_name: admin
